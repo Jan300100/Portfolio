@@ -17,6 +17,11 @@ section {
     margin-bottom: 60px;
 }
 
+.home {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
 h1, h2 {
     font-weight: 300;
     text-transform: uppercase;
@@ -37,7 +42,7 @@ p {
 
 h2 {
     font-size: 180%;
-    text-align: center;
+    text-align: left;
     word-spacing: 2px;
     margin-bottom: 30px;
 }
