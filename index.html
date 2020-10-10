@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="Vendors/css/Grid.css">
         <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
         <title>Jan Werbrouck &mdash; Portfolio</title>
     </head>
@@ -15,9 +19,6 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-2">
-                    <img class="profile" width="315" height="315" src="Resources/img/IMGP9009.jpg">
-                </div>
-                <div class="col span-1-of-2">
                     <p class="description">
                         My name is Jan Werbrouck. <br>
                          I am 20 years old and live in Harelbeke, Belgium. <br>
@@ -25,6 +26,9 @@
                          I really like programming and I’m always looking to learn more. So far I’m the most interested in engine and graphics programming. <br><br>
                          In my free time I like to play the guitar, play sports or meet up with friends. 
                     </p>
+                </div>
+                <div class="col span-1-of-2">
+                    <img class="profile" width="100%" height="100%" src="Resources/img/IMGP9009.jpg">
                 </div>
             </div>
         </section> 
@@ -43,16 +47,11 @@
                     </p>
                 </div>
                 <div class="col span-1-of-2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/t-FEHXsuNW0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <iframe  width="100%" height="290px" src="https://www.youtube.com/embed/t-FEHXsuNW0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-2">
-                        <img width="560" height="315" src="Resources/img/TR.png">
-                    </div>
-                    <div class="col span-1-of-2">
-                        <img width="560" height="315" src="Resources/img/100085822_818180705377230_9161785607444234240_n.png">
-                    </div>
+                    <img width="100%" height="100%" src="Resources/img/TR.png">
+                    <img width="100%" height="100%" src="Resources/img/100085822_818180705377230_9161785607444234240_n.png">
+
                 </div>
             </div>
         </section> 
@@ -63,8 +62,11 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cqWij83uLpc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/cqWij83uLpc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
+                    <img width="100%" height="100%" src="Resources/img/bucket.gif">
+                    <img width="100%" height="100%" src="Resources/img/ohcrab1.jpg">
+
                 </div>
                 <div class="col span-1-of-2">
                     <p class="description">
@@ -74,52 +76,43 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <img width="560" height="315" src="Resources/img/bucket.gif">
-                </div>
-                <div class="col span-1-of-2">
-                    <img width="560" height="315" src="Resources/img/ohcrab1.jpg">
-                </div>
-            </div>
         </section> 
 
         <section>
             <div class="row">
-                <div class="col span-1-of-2">
-                    <div class="row">
-                        <h2>Eagle Eye</h2>
-                        <div>
-                            <p class="description">
-                                This game was made for the <b>Tobii C4</b> eye-tracking device and makes full advantage of its features. <br><br>
-                                These Features are mapping the player’s head position to the eagle’s head,<br> HUD-Elements that disappear when you are not looking for it and of course the main mechanic of the game : Catching pray with your eyes to feed and grow the eagle.<br><br> 
-                                This Game was coded in <b>Unity</b>, together with a friend.       
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-2">
-                    <div class="row">
-                        <h2>HexaGrow</h2>
-                        <div>
-                            <p class="description">
-                                <b>HexaGrow</b> was my first experience with <b>Unity</b> and <b>C#</b>. <br><br>
-                                It is a turn-based strategy game on a hexagonal grid, where each player controls their very own empire. <br><br>
-                                Each player tries to expand their empire to reach the top of the map, by collecting and selling their resources in the most optimal way, depending on the prices of these resources on the market.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <h2>Eagle Eye</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-2">
-                    <img width="560" height="315" src="Resources/img/eagleMain.PNG">
-                    <img width="560" height="315" src="Resources/img/game.PNG">
+                    <p class="description">
+                        This game was made for the <b>Tobii C4</b> eye-tracking device and makes full advantage of its features. <br><br>
+                        These Features are mapping the player’s head position to the eagle’s head,<br> HUD-Elements that disappear when you are not looking for it and of course the main mechanic of the game : Catching pray with your eyes to feed and grow the eagle.<br><br> 
+                        This Game was coded in <b>Unity</b>, together with a friend.       
+                    </p>
                 </div>
                 <div class="col span-1-of-2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BU9DX3ACxsc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <img width="100%" height="100%" src="Resources/img/eagleMain.PNG">
+                    <img width="100%" height="100%" src="Resources/img/game.PNG">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <h2>HexaGrow</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <p class="description">
+                        <b>HexaGrow</b> was my first experience with <b>Unity</b> and <b>C#</b>. <br><br>
+                        It is a turn-based strategy game on a hexagonal grid, where each player controls their very own empire. <br><br>
+                        Each player tries to expand their empire to reach the top of the map, by collecting and selling their resources in the most optimal way, depending on the prices of these resources on the market.
+                    </p>
+                </div>
+                <div class="col span-1-of-2">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/BU9DX3ACxsc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
-                    <img width="560" height="315" src="Resources/img/Capture.PNG">
+                    <img width="100%" height="100%" src="Resources/img/Capture.PNG">
                 </div>
             </div>
         </section> 
