@@ -1,30 +1,17 @@
 @media only screen and (max-width: 480px)
-{    .row {
-    max-width: 300px;
-    margin: 0 auto;
-}
+{    
 }
 
 @media only screen and (max-width: 767px)
 {
-    .row {
-        max-width: 480px;
-        margin: 0 auto;
-    }
+
 }
 
 @media only screen and (max-width: 1023px)
 {
-    .row {
-        max-width: 900px;
-        margin: 0 auto;
-    }
+
 }
 
 @media only screen and (max-width: 1200px)
 {
-    .row {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
 }
