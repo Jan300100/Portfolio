@@ -1102,7 +1102,7 @@ a {
 .cid-sd6sTxdes1 {
   padding-top: 6rem;
   padding-bottom: 2rem;
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 .cid-sd6sTxdes1 img,
 .cid-sd6sTxdes1 .item-img {
@@ -1121,7 +1121,7 @@ a {
 .cid-sd6sTxdes1 .item-wrapper {
   position: relative;
   border-radius: 4px;
-  background: #ffffff;
+  background: #fafafa;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -1163,7 +1163,7 @@ a {
 .cid-sd6tb3SMXS {
   padding-top: 3rem;
   padding-bottom: 6rem;
-  background-color: #ffffff;
+  background-image: url("../../../assets/images/mbr-1920x1055.png");
 }
 .cid-sd6tb3SMXS .mbr-iconfont {
   display: block;
