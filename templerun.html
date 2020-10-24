@@ -93,6 +93,30 @@
     </div>
 </section>
 
+<section class="content5 cid-segTssJt0G" id="content5-2a">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                
+                <p class="mbr-text mbr-fonts-style display-7"><strong>Instanced Renderer
+<br></strong>All assets in this game except for the character had to be rendered multiple times. Because the Overlord engine didn’t have this functionality, I implemented my own InstancedRenderer. I’ll quickly try to explain how it works and how a user of the engine could use it.<br><br>For the user it is really easy to use the InstancedRenderer: 
+<br>1.	Create a <strong>Key </strong>using the InstancedRenderer 
+<br>2.	Create <em>Instance</em>&lt;<strong><em>T</em></strong>&gt;<t>(<strong>Key </strong>key, <strong><em>T</em></strong> <u>instanceData</u>) (<strong><em>T </em></strong>can be an <strong><em>XMFLOAT4x4 </em></strong>for example and act as a transform)
+<br>3.	Repeat step 2 as much as you want instances.&nbsp;</t><br><br>The InstancedRenderer class has a map&lt;<strong>Key</strong>,<strong>Buffers</strong>&gt;<br><br><key, buffers=""><strong>Key</strong>: Contains info that is shared between <em>Instances
+</em><br>-	MaterialID
+<br>-	Info about <u>instanceData </u>(sizeof, typename)
+<br>-	Max instances
+<br>-	Meshfilter (Vertexbuffer, IndexBuffer, IndexCount)</key,><br><key, buffers=""><br><strong>Buffers</strong>: These consist of:
+<br>-	ID3D11Buffer*</key,><br><key, buffers="">-	Vector&lt;<em>Instance*</em>&gt;<instance><br>-	<u>void</u>* <u>InstanceData </u>(contiguous buffer of the&nbsp;<u>instanceData</u>)
+<br>Each element of the vector (<em>Instance</em>) has a pointer to the <u>data</u> of the instance in the <u>instanceData </u>buffer.
+</instance></key,><br><key, buffers=""><instance><br><u>InstanceData</u>:  for example a <strong><em>XMFLOAT4X4</em></strong><br></instance></key,><br><key, buffers=""><instance>every time an instance gets added or removed, the buffers get updated accordingly.<t><br></t></instance></key,></p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="image5 cid-sd7dkyPytI" id="image5-17">
     
     
@@ -103,20 +127,51 @@
                     <div class="col-12 col-lg-7">
                         <div class="img-item mb-3">
                             <img src="assets/images/tr-1076x546.png" alt="">
-                            
+                            <p class="mbr-fonts-style align-center mt-2 display-7">I used Imgui to tweak the post processing effects</p>
                         </div>
                     </div>
                     <div class="col-12 col-lg">
                         <div class="img-item mb-3">
                             <img src="assets/images/100085822-818180705377230-9161785607444234240-n-1-886x498.png" alt="">
-                            
+                            <p class="mbr-fonts-style align-center mt-2 display-7">Main menu screen<br><br></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/m" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"><a href="https://mobirise.site" style="color:#aaa;">https://mobirise.com</a> easy website maker</p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/playervimeo/vimeo_player.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section>
+
+<section class="content5 cid-segVrsjRg7" id="content5-2c">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                
+                <p class="mbr-text mbr-fonts-style display-7"><strong>The Terrain and the plants</strong><br><br>For the terrain I used <strong>Tesselation </strong>combined with a noise map. The game is generated with Tiles. Each tile has a terrain quad. In the tesselation stage the quad gets subdivided, then gets an offset in the domain shader based on a noise map, which is sampled by the world position.
+<br>This noise map is then later reused by the plants and stones on the terrain, so they are rendered at the correct height to fit the terrain.<br><br> The plants wave in the <strong>wind</strong>, which is done in the <strong>vertex shader</strong>. The higher the vertex is above the terrain, the more wind they catch.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="image3 cid-segVznMkt2" id="image3-2d">
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12">
+                <div class="image-wrapper">
+                    <img src="assets/images/capture-1275x712.png" alt="Mobirise">
+                    <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">Terrain using tesselation and a noise map.&nbsp;Best visible in the fog at the right side of the screen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/z" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Made with Mobirise <a href="https://mobirise.site/u" style="color:#aaa;">website</a> themes</p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/playervimeo/vimeo_player.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
 </body>
