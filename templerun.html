@@ -87,31 +87,7 @@
                 
                 <p class="mbr-text mbr-fonts-style display-7">
                     The road and the world around the player consists of tiles that get generated while you are playing. There are road tiles and nature tiles. When you leave behind a road tile, it gets destroyed and the road extends at the end so you can keep running. The game keeps track of what nature tiles are irrelevant and deletes them accordingly.<br><br>There are a lot of assets in this game that get rendered multiple times. Flowers, grasses, trees, bushes, roads ...
-<br>The Overlord Engine in which this game was made, did not originally support instanced rendering. So I had to implement it myself. The performance of the game was still not as good as I wanted it to be, but it was playable.<br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="content5 cid-segTssJt0G" id="content5-2a">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                
-                
-                <p class="mbr-text mbr-fonts-style display-7"><strong>Instanced Renderer
-<br></strong>All assets in this game except for the character had to be rendered multiple times. Because the Overlord engine didn’t have this functionality, I implemented my own InstancedRenderer. I’ll quickly try to explain how it works and how a user of the engine could use it.<br><br>For the user it is really easy to use the InstancedRenderer: 
-<br>1.	Create a <strong>Key </strong>using the InstancedRenderer 
-<br>2.	Create <em>Instance</em>&lt;<strong><em>T</em></strong>&gt;<t>(<strong>Key </strong>key, <strong><em>T</em></strong> <u>instanceData</u>) (<strong><em>T </em></strong>can be an <strong><em>XMFLOAT4x4 </em></strong>for example and act as a transform)
-<br>3.	Repeat step 2 as much as you want instances.&nbsp;</t><br><br>The InstancedRenderer class has a map&lt;<strong>Key</strong>,<strong>Buffers</strong>&gt;<br><br><key, buffers=""><strong>Key</strong>: Contains info that is shared between <em>Instances
-</em><br>-	MaterialID
-<br>-	Info about <u>instanceData </u>(sizeof, typename)
-<br>-	Max instances
-<br>-	Meshfilter (Vertexbuffer, IndexBuffer, IndexCount)</key,><br><key, buffers=""><br><strong>Buffers</strong>: These consist of:
-<br>-	ID3D11Buffer*</key,><br><key, buffers="">-	Vector&lt;<em>Instance*</em>&gt;<instance><br>-	<u>void</u>* <u>InstanceData </u>(contiguous buffer of the&nbsp;<u>instanceData</u>)
-<br>Each element of the vector (<em>Instance</em>) has a pointer to the <u>data</u> of the instance in the <u>instanceData </u>buffer.
-</instance></key,><br><key, buffers=""><instance><br><u>InstanceData</u>:  for example a <strong><em>XMFLOAT4X4</em></strong><br></instance></key,><br><key, buffers=""><instance>every time an instance gets added or removed, the buffers get updated accordingly.<t><br></t></instance></key,></p>
+<br>Actually everything except for the player character. The Overlord Engine in which this game was made, did not originally support instanced rendering. So I had to implement it myself. The performance of the game was still not as good as I wanted it to be, but it was playable.<br></p>
             </div>
         </div>
     </div>
@@ -171,7 +147,7 @@
             </div>
         </div>
     </div>
-</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/z" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Made with Mobirise <a href="https://mobirise.site/u" style="color:#aaa;">website</a> themes</p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/playervimeo/vimeo_player.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/p" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Built with <a href="https://mobirise.site/b" style="color:#aaa;">Mobirise</a> theme</p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/playervimeo/vimeo_player.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
 </body>

@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "index.html",
+    "currentPage": "templerun.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -50,7 +50,7 @@
         "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 102,
+    "uniqCompNum": 107,
     "versionPublish": "5.1.4",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -1426,29 +1426,9 @@
             "background-color": "@bgColor"
           },
           "_name": "content5",
-          "_customHTML": "<section class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#fafafa\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">World Generation</h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">\n                    The road and the world around the player consists of tiles that get generated while you are playing. There are road tiles and nature tiles. When you leave behind a road tile, it gets destroyed and the road extends at the end so you can keep running. The game keeps track of what nature tiles are irrelevant and deletes them accordingly.<br><br>There are a lot of assets in this game that get rendered multiple times. Flowers, grasses, trees, bushes, roads ...\n<br>The Overlord Engine in which this game was made, did not originally support instanced rendering. So I had to implement it myself. The performance of the game was still not as good as I wanted it to be, but it was playable.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#fafafa\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">World Generation</h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">\n                    The road and the world around the player consists of tiles that get generated while you are playing. There are road tiles and nature tiles. When you leave behind a road tile, it gets destroyed and the road extends at the end so you can keep running. The game keeps track of what nature tiles are irrelevant and deletes them accordingly.<br><br>There are a lot of assets in this game that get rendered multiple times. Flowers, grasses, trees, bushes, roads ...\n<br>Actually everything except for the player character. The Overlord Engine in which this game was made, did not originally support instanced rendering. So I had to implement it myself. The performance of the game was still not as good as I wanted it to be, but it was playable.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sduKQwOMb0",
           "_anchor": "content5-1t",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".mbr-text": {
-              "color": "#000000",
-              "text-align": "left"
-            }
-          },
-          "_name": "content5",
-          "_customHTML": "<section class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Enter your subtitle here\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><b>Instanced Renderer\n<br></b>All assets in this game except for the character had to be rendered multiple times. Because the Overlord engine didn’t have this functionality, I implemented my own InstancedRenderer. I’ll quickly try to explain how it works and how a user of the engine could use it.<br><br>For the user it is really easy to use the InstancedRenderer: \n<br>1.\tCreate a <b>Key </b>using the InstancedRenderer \n<br>2.\tCreate <i>Instance</i>&lt;<b><i>T</i></b>&gt;<t>(<b>Key </b>key, <b><i>T</i></b> <u>instanceData</u>) (<b><i>T </i></b>can be an <b><i>XMFLOAT4x4 </i></b>for example and act as a transform)\n<br>3.\tRepeat step 2 as much as you want instances.&nbsp;</t><br><br>The InstancedRenderer class has a map&lt;<b>Key</b>,<b>Buffers</b>&gt;<br><br><key, buffers=\"\"><b>Key</b>: Contains info that is shared between <i>Instances\n</i><br>-\tMaterialID\n<br>-\tInfo about <u>instanceData </u>(sizeof, typename)\n<br>-\tMax instances\n<br>-\tMeshfilter (Vertexbuffer, IndexBuffer, IndexCount)</key,><br><key, buffers=\"\"><br><b>Buffers</b>: These consist of:\n<br>-\tID3D11Buffer*</key,><br><key, buffers=\"\">-\tVector&lt;<i>Instance*</i>&gt;<instance><br>-\t<u>void</u>* <u>InstanceData </u>(contiguous buffer of the&nbsp;<u>instanceData</u>)\n<br>Each element of the vector (<i>Instance</i>) has a pointer to the <u>data</u> of the instance in the <u>instanceData </u>buffer.\n</instance></key,><br><key, buffers=\"\"><instance><br><u>InstanceData</u>:  for example a <b><i>XMFLOAT4X4</i></b><br></instance></key,><br><key, buffers=\"\"><instance>every time an instance gets added or removed, the buffers get updated accordingly.<t><br></t></instance></key,></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "segTssJt0G",
-          "_anchor": "content5-2a",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
