@@ -92,7 +92,7 @@
                 
                 <p class="mbr-text mbr-fonts-style display-7">
                     The road and the world around the player consists of tiles that get generated while you are playing. There are road tiles and nature tiles. When you leave behind a road tile, it gets destroyed and the road extends at the end so you can keep running. The game keeps track of what nature tiles are irrelevant and deletes them accordingly.<br><br>There are a lot of assets in this game that get rendered multiple times. Flowers, grasses, trees, bushes, roads ...
-<br>Actually everything except for the player character. The Overlord Engine in which this game was made, did not originally support instanced rendering. So I had to implement it myself. The performance of the game was still not as good as I wanted it to be, but it was playable.<br></p>
+<br>Almost everything except for the player character. The Overlord Engine in which this game was made, did not originally support instanced rendering. So a flexible system was implemented. <br></p>
             </div>
         </div>
     </div>
@@ -130,8 +130,8 @@
             <div class="col-md-12 col-lg-10">
                 
                 
-                <p class="mbr-text mbr-fonts-style display-7"><strong>The Terrain and the plants</strong><br><br>For the terrain I used <strong>Tesselation </strong>combined with a noise map. The game is generated with Tiles. Each tile has a terrain quad. In the tesselation stage the quad gets subdivided, then gets an offset in the domain shader based on a noise map, which is sampled by the world position.
-<br>This noise map is then later reused by the plants and stones on the terrain, so they are rendered at the correct height to fit the terrain.<br><br> The plants wave in the <strong>wind</strong>, which is done in the <strong>vertex shader</strong>. The higher the vertex is above the terrain, the more wind they catch.<br></p>
+                <p class="mbr-text mbr-fonts-style display-7">For the terrain I used Tesselation combined with a noise map. The game is generated with Tiles. Each tile has a terrain quad. In the tesselation stage the quad gets subdivided, then gets an offset in the domain shader based on a noise map, which is sampled by the world position.
+<br>This noise map is then later reused by the plants and stones on the terrain, so they are rendered at the correct height to fit the terrain.<br><br> The plants wave in the wind, which is done in the vertex shader. The higher the vertex is above the terrain, the more wind they catch.<br></p>
             </div>
         </div>
     </div>
