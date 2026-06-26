@@ -75,8 +75,8 @@
             <div class="col-12 col-lg">
                 <div class="text-wrapper">
                     <h3 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7"><strong>C++ | SDL | OpenGL</strong></h3>
-                    <p class="mbr-text mbr-fonts-style display-7">This was a school assignment in the second semester of the first year, I wanted to challenge myself, so i tried to make a 2D clone of The Witcher 3, my favourite game.
-<br><br>My programming skills have improved a lot since this project, but I'm still proud of this project.</p>
+                    <p class="mbr-text mbr-fonts-style display-7">A custom 2D clone of The Witcher 3 developed as a first-year project. Implemented core gameplay systems, rendering pipelines, and input handling from scratch using C++, SDL, and OpenGL.
+<br><br>Features dynamic systems such as interactive quest dialogues, selection wheels, inventory management, and a custom retargetable keyframe-based animation interpolation pipeline.</p>
                 </div>
             </div>
         </div>
@@ -200,7 +200,7 @@
         <div class="mbr-section-head">
             <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-5">Witcher signs, enemies, eating and parrying</h4>
             <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-7">
-                The animations of the player character and the npcs aren't sprite animations. I stored the positions of the hands, head, feet and body for some key frames. The game then interpolated these positions. This way the animations could be reused. And the player has the possibility to change his armor and weapons as he wants without a problem animation wise.<br></h5>
+                Character and NPC animations utilize a custom procedural keyframe system instead of traditional sprites. By storing relative joint positions (hands, head, feet, body) at keyframes and interpolating between them, animations are dynamically retargeted. This allows armor and weapons to be swapped seamlessly on the character model without requiring separate animation assets.<br></h5>
         </div>
         <div class="row mt-4">
             <div class="item features-image сol-12 col-md-6 col-lg-4">
