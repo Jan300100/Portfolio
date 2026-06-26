@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.6.13, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.6.13, mobirise.com">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="">
+  <meta property="og:image" content="">
+  <meta name="twitter:title" content="Shadertoy Particle System">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/person-circle-outline.svg" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Shadertoy Particle System</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu1 cid-sd6qYX0uMd" once="menu" id="menu1-15">
+    
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white text-primary display-7" href="index.html">Jan Werbrouck - Portfolio<br></a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#content2-u">
+                            Projects</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#contacts1-v">Contact</a>
+                    </li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="video5 cid-sd7dk4vcDm" id="video5-16">
+    
+    <div class="container">
+        <div class="title-wrapper mb-5">
+            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>Shadertoy Particle System</strong></h4>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-7 video-block">
+                <div class="video-wrapper"><iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/XX3BRr?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe></div>
+                
+            </div>
+            <div class="col-12 col-lg">
+                <div class="text-wrapper">
+                    <h3 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7"><strong>GLSL | WebGL | Shadertoy</strong></h3>
+                    <p class="mbr-text mbr-fonts-style display-7">A generic Particle Framework built for Shadertoy, supporting hundreds of thousands of particles in real time — all within the strict constraints of the Shadertoy environment, which proved a significant technical challenge.
+<br><br>Shadertoy consists of 5 fullscreen passes per frame, and you have access to the previous version of each buffer to read from. This project implements a spatial partitioning system that updates from frame to frame, based on the new positions of the particles.
+<br><br><strong>Buffer A</strong> holds all the particle data, which can be easily extended to include more or less data (at the cost of fewer max particles). While rendering buffer A, we also perform whatever logic each particle implements. It uses the results of the spatial partitioning from the last frame to do quick checks against neighbouring particles, without the need to check all particles.
+<br><br><strong>Buffer B</strong> divides the screen into tiles, and for each tile calculates how many particles are in it, checking all particles that were in neighbouring tiles in the previous frame.
+<br><br><strong>Buffer C</strong> counts in each bucket of tiles what index a specific tile starts on. This way, in combination with the count of particles in a tile in Buffer B, we define a range in Buffer D where we will store the particles of this tile for easy lookup in the image and in Buffer A.
+<br><br><strong>Buffer D</strong> contains the sorted list of particles per tile, based on the count in B and the offset in C.
+<br><br><strong>Image</strong> visualizes the particles. Using the spatial partitioning, we only need to check a small subset of particles to figure out which will be visible in a certain pixel.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  
+</body>
+</html>
